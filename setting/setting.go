@@ -22,6 +22,7 @@ type MySQLConfig struct {
 	Port     int    `ini:"port"`
 }
 
+// 初始化
 func Init(file string) error {
 	return ini.MapTo(Conf, file)
 }
